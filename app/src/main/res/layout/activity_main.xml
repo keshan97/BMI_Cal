@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Weight: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/in_kg"
+            android:layout_width="105dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="kilograms"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/in_lb"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:hint="pounds"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lb"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/in_oz"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:hint="ounces"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="oz"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Please Enter your weight in one of the above units."
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Height: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/in_m"
+            android:layout_width="105dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="meters"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/in_ft"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:hint="feet"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ft"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/in_in"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:hint="inches"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="in"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Please Enter your height in one of the above units. If you use feets please mention your height in feet and inches."
+        android:layout_gravity="center"/>
+
+    <Button
+        android:onClick="calculate"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"/>
+
+    <TextView
+        android:id="@+id/bmix"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="YOUR BMI VALUE"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEALTHY RANGE: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:hint="TEXT"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
